@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in1">
+    <input type="text" id="in2">
+    <button id="btn">add</button>
+    <script>
+    let input1=document.getElementById("in1")
+    let input2=document.getElementById("in2")
+    var button=document.getElementById("btn")
+    
+    button.addEventListener("click",()=>{
+        var out=document.createElement("p")
+        out.textContent=(Number)(input1.value)+ (Number)(input2.value)
+        document.body.appendChild(out)
+        input1.remove()
+        input2.remove()
+        button.remove()
+
+
+    })
+
+</script>
+</body>
+</html>

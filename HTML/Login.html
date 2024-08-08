@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body {
+            font-family: Courier New, sans-serif;
+            background-image: url(ROG_wallpaper_Psychedelic_1920x1080.jpg);
+            background-size: cover;
+            text-align: center;
+            margin: 10%;
+            padding: 0px; 
+        }
+        .container {
+            margin: 10% auto;
+            height: 250px;
+            width: 500px;
+            background-color: rgba(126, 234, 102, 0.486);
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 10 10 10px #20105020;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #4e32d7;
+            border-radius: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: rgb(85, 33, 207);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <link rel="icon" href="login.jpg">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        
+        <form action="/submit-your-form-handler" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>
